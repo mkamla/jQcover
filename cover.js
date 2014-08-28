@@ -14,7 +14,7 @@
 			targetImage.attr("src",oSrc+ "?" + new Date().getTime());
 			if(targetImage.attr('class')!=='sized'){
 				targetImage.css('opacity', '0');
-			};
+			}
 
 			targetImage.on('load',function(){
 				fill(targetImage,imgParentWidth,imgParentHeight);
@@ -32,7 +32,7 @@
 
 			if(this.imageState==='sized'){
 				return;
-			};
+			}
 			
 			this.imageW = parseInt(this.image1.css('width'),10);
 			this.imageH = parseInt(this.image1.css('height'),10);
@@ -48,11 +48,11 @@
 					//image is too wide
 					this.finalHeight = 'auto';
 					this.finalWidth = '100%';
-				};
+				}
 			} else {
 				this.finalHeight = '100%';
 				this.finalWidth = '100%';
-			};
+			}
 			
 			this.image1.addClass('sized').css({
 				'width': this.finalWidth,
